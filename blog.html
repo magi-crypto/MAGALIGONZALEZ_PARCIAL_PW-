@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Profesional - Messi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html">Inicio</a>
+            <a href="perfil.html">Perfil Profesional</a>
+            <a href="galeria.html">Galería de Imágenes</a>
+            <a href="blog.html">Blog Profesional</a>
+            <button id="color-changer-btn-blog" class="changing-button">Botón Cambiante</button>
+        </nav>
+    </header>
+
+    <main class="blog-content">
+        <h1>📰 Blog: Hitos de una Carrera Épica</h1>
+        
+        <section class="career-steps">
+            
+            <article class="blog-article hidden-article">
+                <img src="assets/img/barca-header.jpg" alt="Messi en el FC Barcelona" class="article-header-img">
+                <h2>El Legado Inigualable en el FC Barcelona</h2>
+                <p>Desde La Masía hasta convertirse en el máximo goleador y leyenda absoluta del club. Sus 17 temporadas en Barcelona estuvieron llenas de títulos, récords y un fútbol que maravilló al mundo. El Barça fue el escenario donde forjó su identidad y se convirtió en el "D10S" del fútbol.</p>
+                <a href="https://www.fcbarcelona.es/" target="_blank" class="read-more-btn">Leer más sobre el Club</a>
+            </article>
+
+            <article class="blog-article hidden-article">
+                <img src="assets/img/argentina-header.jpg" alt="Messi con la Selección Argentina" class="article-header-img">
+                <h2>El Sueño Cumplido: Copa Mundial y Copa América</h2>
+                <p>Tras años de esfuerzo y desilusiones, el 2021 y 2022 marcaron la cúspide de su carrera internacional. Ganar la Copa América y, finalmente, la Copa Mundial de la FIFA en Catar, sellaron su estatus como el indiscutible GOAT. La Albiceleste se consagró, y él lo lideró.</p>
+                <a href="https://es.fifa.com/tournaments/mens/worldcup/2022qatar" target="_blank" class="read-more-btn">Leer más sobre la Competencia</a>
+            </article>
+
+            <article class="blog-article hidden-article">
+                <img src="assets/img/miami-header.jpg" alt="Messi en Inter Miami" class="article-header-img">
+                <h2>Inter Miami: La Expansión de la Leyenda</h2>
+                <p>Su llegada a la Major League Soccer (MLS) con el Inter Miami revolucionó el fútbol en Norteamérica. En pocos meses, llevó al equipo a ganar su primer título, la Leagues Cup, demostrando que su magia y capacidad de liderazgo siguen intactas en cualquier continente.</p>
+                <a href="https://www.mlssoccer.com/" target="_blank" class="read-more-btn">Leer más sobre la Liga</a>
+            </article>
+
+        </section>
+
+        <div class="variable-speed-text-container">
+            <p class="slow-text">Movimiento Lento</p>
+            <p class="fast-text">Movimiento Rápido</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Desarrollado por: [TU NOMBRE COMPLETO]</p>
+        <p>Fecha de actualización: 13 de Noviembre de 2025 (Actualizada manualmente)</p>
+    </footer>
+
+    <script>
+        document.getElementById('color-changer-btn-blog').addEventListener('click', function() {
+            this.classList.toggle('clicked');
+        });
+        
+        // Función para la animación de desplazamiento suave (Scroll Animation)
+        const articles = document.querySelectorAll('.blog-article');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    // Dejar de observar después de la primera aparición
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1 // 10% del elemento visible
+        });
+
+        articles.forEach(article => {
+            observer.observe(article);
+        });
+    </script>
+</body>
+</html>

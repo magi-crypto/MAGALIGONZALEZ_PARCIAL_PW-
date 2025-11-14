@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lionel Messi - Inicio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html">Inicio</a>
+            <a href="perfil.html">Perfil Profesional</a>
+            <a href="galeria.html">Galería de Imágenes</a>
+            <a href="blog.html">Blog Profesional</a>
+            <button id="color-changer-btn" class="changing-button">Botón Cambiante</button>
+        </nav>
+    </header>
+
+    <main class="index-content">
+        <h1>🐐 Lionel Andrés Messi Cuccittini</h1>
+        
+        <section class="animated-buttons">
+            <h2>Navega por el Universo Messi</h2>
+            <p>Haz clic en los botones para descubrir más sobre la leyenda.</p>
+
+            <div class="button-container">
+                <a href="perfil.html" class="nav-btn btn-1">Perfil Profesional</a>
+                <a href="galeria.html" class="nav-btn btn-2">Galería de Imágenes</a>
+                <a href="blog.html" class="nav-btn btn-3">Blog Profesional</a>
+                <a href="index.html" class="nav-btn btn-4">Inicio (Repetido por 5to)</a>
+                <a href="index.html" class="nav-btn btn-5">Extra (Repetido por 5to)</a>
+            </div>
+        </section>
+
+        <section class="page-descriptions">
+            <h2>🔍 Contenidos de la Página</h2>
+            
+            <div class="description-item">
+                <h3>Perfil Profesional</h3>
+                <p>Descubre la biografía completa de Leo, su impresionante carrera resumida en una tabla y enlaces directos a sus redes sociales.</p>
+            </div>
+
+            <div class="description-item">
+                <h3>Galería de Imágenes</h3>
+                <p>Ocho momentos icónicos capturados, cada imagen con un efecto visual distinto y una descripción oculta al pasar el ratón.</p>
+            </div>
+
+            <div class="description-item">
+                <h3>Blog Profesional</h3>
+                <p>Un recorrido por los hitos de su carrera (clubes, competencias, etc.) con artículos que se deslizan suavemente al aparecer en pantalla.</p>
+            </div>
+            
+            <div class="color-cycle-box">
+                <p>Animación de Ciclo de Colores</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Desarrollado por: [TU NOMBRE COMPLETO]</p>
+        <p>Fecha de actualización: 13 de Noviembre de 2025 (Actualizada manualmente)</p>
+    </footer>
+
+    <script>
+        document.getElementById('color-changer-btn').addEventListener('click', function() {
+            this.classList.toggle('clicked');
+        });
+    </script>
+</body>
+</html>

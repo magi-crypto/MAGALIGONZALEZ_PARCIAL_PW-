@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes - Messi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html">Inicio</a>
+            <a href="perfil.html">Perfil Profesional</a>
+            <a href="galeria.html">Galería de Imágenes</a>
+            <a href="blog.html">Blog Profesional</a>
+            <button id="color-changer-btn-galeria" class="changing-button">Botón Cambiante</button>
+        </nav>
+    </header>
+
+    <main class="galeria-content">
+        <h1>📸 Galería de Momentos</h1>
+        
+        <section class="image-gallery">
+            
+            <div class="gallery-item item-1">
+                <img src="assets/img/placeholder1.jpg" alt="Messi Balón de Oro" class="anim-zoom">
+                <div class="description-overlay">
+                    <h3>Octavo Balón de Oro</h3>
+                    <p>Celebrando un récord histórico en el fútbol mundial.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item item-2">
+                <img src="assets/img/placeholder2.jpg" alt="Messi con Copa Mundial" class="anim-rotate-light">
+                <div class="description-overlay">
+                    <h3>La Copa más Deseada</h3>
+                    <p>El momento cumbre de su carrera, Campeón del Mundo 2022.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item item-3">
+                <img src="assets/img/placeholder3.jpg" alt="Messi en Barcelona" class="anim-fade">
+                <div class="description-overlay">
+                    <h3>Inicios en el Barça</h3>
+                    <p>La juventud y el inicio de la leyenda en el Camp Nou.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item item-4">
+                <img src="assets/img/placeholder4.jpg" alt="Messi en PSG" class="anim-slide-up">
+                <div class="description-overlay">
+                    <h3>Etapa en París</h3>
+                    <p>Defendiendo los colores del Paris Saint-Germain.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item item-5">
+                <img src="assets/img/placeholder5.jpg" alt="Messi en Inter Miami" class="anim-shadow-pulse">
+                <div class="description-overlay">
+                    <h3>El Sueño Americano</h3>
+                    <p>Debut con el Inter Miami C.F. en la MLS.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item item-6">
+                <img src="assets/img/placeholder6.jpg" alt="Gol de Tiro Libre" class="anim-skew">
+                <div class="description-overlay">
+                    <h3>Magia en el Tiro Libre</h3>
+                    <p>Uno de sus clásicos goles de balón parado.</p>
+                </div>
+            </div>
+            
+            <div class="gallery-item item-7">
+                <img src="assets/img/placeholder7.jpg" alt="Messi con Copa América" class="anim-filter">
+                <div class="description-overlay">
+                    <h3>El Primer Gran Título</h3>
+                    <p>Campeón de la Copa América 2021.</p>
+                </div>
+            </div>
+
+            <div class="gallery-item item-8">
+                <img src="assets/img/placeholder8.jpg" alt="Messi y su Familia" class="anim-bounce">
+                <div class="description-overlay">
+                    <h3>Vida Familiar</h3>
+                    <p>Un momento personal y emotivo.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="hover-resize-box">
+            <p>Pasa el cursor sobre mí para aumentar de tamaño.</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Desarrollado por: [TU NOMBRE COMPLETO]</p>
+        <p>Fecha de actualización: 13 de Noviembre de 2025 (Actualizada manualmente)</p>
+    </footer>
+    
+    <script>
+        document.getElementById('color-changer-btn-galeria').addEventListener('click', function() {
+            this.classList.toggle('clicked');
+        });
+    </script>
+</body>
+</html>

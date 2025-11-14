@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Profesional - Messi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html">Inicio</a>
+            <a href="perfil.html">Perfil Profesional</a>
+            <a href="galeria.html">Galería de Imágenes</a>
+            <a href="blog.html">Blog Profesional</a>
+            <button id="color-changer-btn-perfil" class="changing-button">Botón Cambiante</button>
+        </nav>
+    </header>
+
+    <main class="perfil-content">
+        <h1>📋 Perfil Profesional de Lionel Messi</h1>
+
+        <section class="biography">
+            <h2>Biografía Breve</h2>
+            <p>Lionel Andrés Messi Cuccittini, nacido en Rosario, Argentina, es ampliamente considerado como el mejor futbolista de todos los tiempos. Desde su debut en el FC Barcelona, ha redefinido el deporte con su habilidad incomparable, visión de juego y récords históricos. Es el único jugador en ganar ocho Balones de Oro, seis Botas de Oro, y múltiples títulos de liga y copas internacionales, incluyendo la Copa América y la Copa Mundial de la FIFA con la selección argentina.</p>
+        </section>
+
+        <section class="career-table">
+            <h2>Carrera Profesional (Resumen)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Club / Selección</th>
+                        <th>Período</th>
+                        <th>Títulos Destacados</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>F.C. Barcelona</td>
+                        <td>2004 - 2021</td>
+                        <td>10 Ligas, 4 Champions League</td>
+                    </tr>
+                    <tr>
+                        <td>Paris Saint-Germain</td>
+                        <td>2021 - 2023</td>
+                        <td>2 Ligas Francesas</td>
+                    </tr>
+                    <tr>
+                        <td>Inter Miami C.F.</td>
+                        <td>2023 - Actualidad</td>
+                        <td>Leagues Cup</td>
+                    </tr>
+                    <tr>
+                        <td>Selección Argentina (Juvenil)</td>
+                        <td>2004 - 2005</td>
+                        <td>Mundial Sub-20</td>
+                    </tr>
+                    <tr>
+                        <td>Selección Argentina (Mayor)</td>
+                        <td>2005 - Actualidad</td>
+                        <td>Copa América, Copa Mundial FIFA</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="contact-section">
+            <h2>Contacto y Redes Sociales</h2>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/leomessi/" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/leomessi/" target="_blank" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/TeamMessi" target="_blank" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/@leomessi" target="_blank" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
+            </div>
+
+            <div class="cv-link">
+                <a href="assets/pdf/cv_messi.pdf" target="_blank" class="cv-button">
+                    <i class="fas fa-file-pdf"></i> Ver Currículo Profesional (PDF)
+                </a>
+            </div>
+        </section>
+        
+        <div class="rotating-text-container">
+            <h2 class="rotating-text">⚽ El Mejor del Mundo 🐐</h2>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Desarrollado por: [TU NOMBRE COMPLETO]</p>
+        <p>Fecha de actualización: 13 de Noviembre de 2025 (Actualizada manualmente)</p>
+    </footer>
+    
+    <script>
+        document.getElementById('color-changer-btn-perfil').addEventListener('click', function() {
+            this.classList.toggle('clicked');
+        });
+    </script>
+</body>
+</html>
